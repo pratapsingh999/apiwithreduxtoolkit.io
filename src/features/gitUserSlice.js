@@ -10,11 +10,6 @@ export const getAllData = createAsyncThunk("name" , async(args,{rejectwithvalue}
     const response = await fetch("https://api.github.com/users");
     // const response = await fetch("https://rickandmortyapi.com/api/character");
     // const response = await fetch("https://rickandmortyapi.com/api/character/1,183");
-
-
-    // https://api.github.com/users
-    // https://rickandmortyapi.com/api/character
-    // https://rickandmortyapi.com/api/character/1,183
     try {
         const result = response.json();
       return result;
